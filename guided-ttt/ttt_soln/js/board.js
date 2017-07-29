@@ -8,6 +8,13 @@
  * winner - stores winner
  */
 
+class Board {
+  constructor () {
+    this.cells = [];
+    this.currentPlayer = null;
+    this.winner = null;
+  }
+
 
 	/**** Minimum Board methods ****/
 	/**
@@ -18,6 +25,11 @@
 	 * @return {nothing}
 	*/
 
+  function startGame() {
+    const Board = new Board()
+    Board.cells = Array(9)
+    Board.currentPlayer = 'x'
+  }
 
 	/**
 	 * @name {makePlay}
@@ -28,6 +40,11 @@
 		- should do nothing if there is no cell at that position
 	 * @return {nothing}
 	*/
+  function makePlay(number) {
+    const newCell = cell[i];
+    if cell[i]
+
+  }
 
 
 	/**
@@ -36,3 +53,8 @@
 		- should check the game board to see if the previous play was a winning play
 	 * @return {boolean}
 	 */
+   function checkWin() {
+    if cells()
+
+   }
+}

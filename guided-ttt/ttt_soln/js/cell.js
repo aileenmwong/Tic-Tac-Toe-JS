@@ -4,7 +4,14 @@
  	 * @hint - does not take any parameters, but sets the initial value of the cell to 0
  	*/
 
-	/**** Minimum methods for the Cell class, REMEMEBER to declare outside the constructor, but still within the class ****/
+  class Cell {
+    constructor () {
+      this.cell = 0;
+  }
+
+
+	/**** Minimum methods for the Cell class, REMEMEBER to declare outside the
+  constructor, but still within the class ****/
 
 
   /**
@@ -13,15 +20,22 @@
 	 * @hint - first check if the value is 0, and only then set it to value passed
 	 * @return {nothing}
 	*/
+  function setState(number) {
+    if (number === 0
+
+  }
+
 
   /**
    * @name {playable} - Checks if the cell is playable.
-	 * @hint - the  cell is playable if it's value is 0 (default), the cell is not playable, if it has a value of 1.
+	 * @hint - the  cell is playable if it's value is 0 (default),
+   the cell is not playable, if it has a value of 1.
 	 * @return {boolean} - true if the cell is playable and false otherwise
   */
-
+  const playable
 
   /**
    * @name {render} - Renders the cell value.
 	 * @return {number} - returns the value of the current cell
   */
+}
