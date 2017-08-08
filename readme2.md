@@ -1,4 +1,4 @@
-![Tic Tac Toe](../readme-assets/tictactoeboard.png "Tic Tac Toe")
+![Tic Tac Toe](/readme-assets/tictactoeboard.png "Tic Tac Toe")
 
 ###### Tic Tac Toe! ####
 
@@ -36,13 +36,13 @@ I'm making Tic Tac Toe! I'm making it because I was told to do it.
 #### Planning ###
 
 ### Start Game ###
-![Tic Tac Toe](../readme-assets/startgame.jpg "Start Tic Tac Toe")
+![Tic Tac Toe](/readme-assets/startgame.jpg "Start Tic Tac Toe")
 
 ### Play State ###
-![Tic Tac Toe](../readme-assets/playstate.jpg "Play Tic Tac Toe")
+![Tic Tac Toe](/readme-assets/playstate.jpg "Play Tic Tac Toe")
 
 ### Win State ###
-![Tic Tac Toe](../readme-assets/winnerstate.jpg "Win Tic Tac Toe")
+![Tic Tac Toe](/readme-assets/winnerstate.jpg "Win Tic Tac Toe")
 
 ### End Game ###
-![Tic Tac Toe](../readme-assets/reset.jpg "End Tic Tac Toe")
+![Tic Tac Toe](/readme-assets/reset.jpg "End Tic Tac Toe")
