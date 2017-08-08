@@ -2,7 +2,7 @@
 
 ###### Tic Tac Toe! ####
 
-I'm making Tic Tac Toe! I'm making it because I was told to do it.
+I'm making Tic Tac Toe! 
 
 [Play The Game](https://www.bitballoon.com/sites/sales-person-enemies-10410)
  
@@ -12,7 +12,7 @@ I'm making Tic Tac Toe! I'm making it because I was told to do it.
 - CSS
 - Vanilla Javascript
 
-#### Example Code ###
+##### Example Code ###
 
 ```function checkPlayable (event) {
   //check to see if player is player 1 using if statement
@@ -33,16 +33,21 @@ I'm making Tic Tac Toe! I'm making it because I was told to do it.
   }
 ```
 
-#### Planning ###
+#### Build Strategy ###
 
-### Start Game ###
+I started planning out my game using sketches. Then I worked out my game strategy using psuedocode. I knew that the game logic would be the hardest part of the game. I had to think about the board as an array and that got me moving through my game.
+
+#### Future Improvements ###
+I would like to be able to add some animation to the game. 
+
+#### Start Game ###
 ![Tic Tac Toe](/readme-assets/startgame.jpg "Start Tic Tac Toe")
 
-### Play State ###
+#### Play State ###
 ![Tic Tac Toe](/readme-assets/playstate.jpg "Play Tic Tac Toe")
 
-### Win State ###
+#### Win State ###
 ![Tic Tac Toe](/readme-assets/winnerstate.jpg "Win Tic Tac Toe")
 
-### End Game ###
+#### End Game ###
 ![Tic Tac Toe](/readme-assets/reset.jpg "End Tic Tac Toe")
