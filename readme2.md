@@ -30,7 +30,8 @@ I'm making Tic Tac Toe! I'm making it because I was told to do it.
     boxes.splice(event.target.id, 1, 'O');
     //keep increasing the number of clicks
     player++;
-  }```
+  }
+```
 
 #### Planning ###
 
