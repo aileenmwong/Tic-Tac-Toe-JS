@@ -13,8 +13,6 @@
 	 * @return {nothing}
 	*/
 
-  const makeBoard = [];
-
 	/**
 	 * @name {start}
    * @desc
@@ -41,29 +39,48 @@
 	 * @return {boolean}
 	*/
 
-function checkWin () {
-  //horizontal row 1 match
-  if ('.cell #0') === ('.cell #1') && ('.cell #0') === ('.cell #2') {
-  alert("You win!");
-  //horizontal row 2 match
-  } else if ('.cell #3') === ('.cell #4') && ('.cell #3') === ('.cell #5') {
-  alert("You win!");
-  //horizontal row 3 match
-  } else if ('.cell #6') === ('.cell #7') && ('.cell #6') === ('.cell #8') {
-  alert("You win!");
-  //vertical row 1 match
-  } else if ('.cell #0') === ('.cell #3') && ('.cell #0') === ('.cell #6') {
-  alert("You win!");
-  //vertical row 2 match
-  } else if ('.cell #1') === ('.cell #4') && ('.cell #1') === ('.cell #7') {
-  alert("You win!");
-  //vertical row 3 match
-  } else if ('.cell #2') === ('.cell #5') && ('.cell #2') === ('.cell #8') {
-  alert("You win!");
-  //diagonal row top left match
-  } else if ('.cell #0') === ('.cell #4') && ('.cell #0') === ('.cell #8') {
-  alert("You win!");
-  //diagonal row top right match
-  } else if ('.cell #2') === ('.cell #4') && ('.cell #2') === ('.cell #6') {
-  alert("You win!");
-};
+
+const game = {
+  currentPlayer: 'X',
+  boardArr: [],
+  makeBoard: function() {
+    this.board = new Board ()
+  },
+  start: function () {
+    this.makeBoard();
+    this.board.startGame();
+  },
+  play: function(num, event) {
+    if(this.board.cells[num].playAble()) {
+      this.updateCell(num)
+      this.updateBoard(event)
+    }
+  },
+  updateCell: function(num) {
+    this.board.cells[num].setValue(this.currentPlayer)
+  },
+  updateBoard: function(event) {
+    event.target.innerHTML = this.currentPlayer;
+  },
+  freespaces: function() {
+    for (let i = 0; i < this.board.cells.length; i+=1) {
+      if (!this.board.cells[i].value) { return true }
+    }
+      return false
+  },
+  checkWin: function() {
+    if ((this.board.cells[0]).value) === (this.board.cells[1]).value) && (this.board.cells[1]).value) === (this.board.cells[2]).value)) {
+      alert(`${this.currentPlayer} has won`)
+  }
+  if (!this.freeSpaces()) {
+    alert("game over")
+  }
+  },
+  activePlayer() {
+    this.currentPlayer = this.currentPlayer == 'X' ? 'O' : 'X'
+  }
+}
+
+game.makeBoard()
+game.start()
+console.log(game.board)

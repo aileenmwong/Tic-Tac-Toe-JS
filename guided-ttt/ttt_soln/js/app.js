@@ -95,3 +95,11 @@ function checkWin (boxes) {
 
 });
 
+/////CONSTRUCTOR SOLUTION CODE
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+  console.log("DOM fully loaded and parsed");
+
+game.start();
+
+});

@@ -5,9 +5,10 @@
  	*/
 
   class Cell {
-    constructor () {
-      this.cell = 0;
-  }
+    constructor() {
+      this.value = 0;
+    }
+
 
 
 	/**** Minimum methods for the Cell class, REMEMEBER to declare outside the
@@ -20,9 +21,15 @@
 	 * @hint - first check if the value is 0, and only then set it to value passed
 	 * @return {nothing}
 	*/
-  function setState(number) {
-    if (number === 0
-
+     setValue (letter) {
+      this.value = this.value === 0 ? this letter : 0;
+      //if (this.value === 0) {
+        //this.value === letter;
+      }
+      getValue() {
+        return this.value;
+      }
+     }
   }
 
 
@@ -32,10 +39,15 @@
    the cell is not playable, if it has a value of 1.
 	 * @return {boolean} - true if the cell is playable and false otherwise
   */
-  const playable
+  playable() {
+    return this.value === 0 ? true : false;
+  }
 
   /**
    * @name {render} - Renders the cell value.
 	 * @return {number} - returns the value of the current cell
   */
 }
+
+const cell1 = new Cell()
+cell1.setValue('X')

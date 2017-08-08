@@ -10,9 +10,9 @@
 
 class Board {
   constructor () {
-    this.cells = [];
-    this.currentPlayer = null;
-    this.winner = null;
+    this.cells = [],
+    this.currentPlayer = null,
+    this.winner = null,
   }
 
 
@@ -25,10 +25,10 @@ class Board {
 	 * @return {nothing}
 	*/
 
-  function startGame() {
-    const Board = new Board()
-    Board.cells = Array(9)
-    Board.currentPlayer = 'x'
+  startGame() {
+    for (let i = 0; i < 9; i++){
+      this.cells.push(new Cell ())
+    }
   }
 
 	/**
@@ -40,9 +40,8 @@ class Board {
 		- should do nothing if there is no cell at that position
 	 * @return {nothing}
 	*/
-  function makePlay(number) {
-    const newCell = cell[i];
-    if cell[i]
+  makePlay(position) {
+    this.cells[position].playAble() ? this.cells[position].setValue(1) : '';
 
   }
 
