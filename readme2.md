@@ -4,7 +4,7 @@
 
 I'm making Tic Tac Toe! 
 
-[Play The Game](https://www.bitballoon.com/sites/sales-person-enemies-10410)
+[Play The Game](https://git.generalassemb.ly/pages/aileenmwong/project-1/)
  
 ##### Technologies Used ###
 
